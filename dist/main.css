@@ -29,6 +29,7 @@ textarea,
 input {
   outline: none;
   border: none;
+  font-family: inherit;
 }
 
 .attribution {
@@ -42,6 +43,118 @@ input {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.bg {
+  height: 100vh;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 492px;
+  margin: 37px;
+  color: white;
+}
+.leftSide__h1pContainer h1 {
+  font-size: 49px;
+  line-height: 1.12;
+  margin-bottom: 28px;
+}
+.leftSide__h1pContainer p {
+  color: rgb(240, 233, 233);
+  line-height: 1.62;
+  margin-bottom: 0;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 540px;
+  margin: 37px;
+}
+.rightSide__tryIt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  box-shadow: 0px 8px #dc6567;
+}
+.rightSide__tryIt p {
+  margin-bottom: 0;
+  padding-top: 3px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+.rightSide__tryIt p span {
+  font-weight: 600;
+}
+.rightSide__form {
+  height: 474px;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 8px #dc6567;
+}
+.rightSide__form input {
+  width: 100%;
+  height: 55px;
+  padding-left: 30px;
+  outline: solid 1px rgb(212, 211, 211);
+  border-radius: 5px;
+  color: hsl(249, 9%, 47%);
+  font-size: 14px;
+  font-weight: 600;
+}
+.rightSide__form input:not(.firstInput) {
+  margin-top: 22px;
+}
+.rightSide__form button {
+  display: inline-block;
+  width: 100%;
+  height: 55px;
+  margin-top: 20px;
+  padding: 0;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  outline: inherit;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid hsl(154, 57%, 46%);
+  box-shadow: inset 0 -3px hsl(154, 57%, 46%);
+}
+.rightSide__form p {
+  font-size: 0.65em;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  color: hsl(246, 25%, 77%);
+  letter-spacing: 0.04em;
+}
+.rightSide__form p span {
+  color: hsl(0, 84%, 75%);
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

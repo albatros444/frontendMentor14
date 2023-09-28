@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <title>Frontend Mentor | Intro component with sign up form</title>
@@ -37,12 +37,36 @@
           <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
         </div>
         <form class="rightSide__form">
-          <input class="firstInput" type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email Address" />
-          <input type="text" placeholder="Password" />
-          <button>Claim your free trial</button>
-          <p>
+          <input
+            class="fnameInput"
+            name="fnameInput"
+            type="text"
+            placeholder="First Name"
+          />
+          <p class="errMessage fnErrMessage"></p>
+          <input
+            class="lnameInput"
+            name="lnameInput"
+            type="text"
+            placeholder="Last Name"
+          />
+          <p class="errMessage lnErrMessage"></p>
+          <input
+            class="emailInput"
+            name="emailInput"
+            type="text"
+            placeholder="Email Address"
+          />
+          <p class="errMessage emErrMessage"></p>
+          <input
+            class="passwordInput"
+            name="passwordInput"
+            type="password"
+            placeholder="Password"
+          />
+          <p class="errMessage pErrMessage"></p>
+          <button type="submit">Claim your free trial</button>
+          <p class="footnote">
             By clicking the button, you are agreeing to our
             <span>Terms and Services</span>
           </p>
@@ -58,5 +82,6 @@
         >. Coded by <a href="#">Alexander</a>.
       </p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>

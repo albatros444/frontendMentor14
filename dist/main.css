@@ -104,24 +104,45 @@ input {
   font-weight: 600;
 }
 .rightSide__form {
-  height: 474px;
+  width: 100%;
   border-radius: 10px;
   padding: 40px;
   background-color: white;
   box-shadow: 0px 8px #dc6567;
 }
 .rightSide__form input {
+  position: relative;
   width: 100%;
   height: 55px;
   padding-left: 30px;
+  padding-right: 60px;
   outline: solid 1px rgb(212, 211, 211);
   border-radius: 5px;
   color: hsl(249, 9%, 47%);
   font-size: 14px;
   font-weight: 600;
 }
+.rightSide__form input:focus {
+  outline: solid 1px black;
+  color: black;
+}
+.rightSide__form .errorInput {
+  background: right 26px center url("/images/icon-error.svg") no-repeat;
+  outline: solid 1px #dc6567;
+  color: #dc6567;
+}
 .rightSide__form input:not(.firstInput) {
   margin-top: 22px;
+}
+.rightSide__form .errMessage {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: right;
+  margin-bottom: 0;
+  margin-top: 8px;
+  color: #e78586;
+  font-style: italic;
+  font-weight: 500;
 }
 .rightSide__form button {
   display: inline-block;
@@ -141,18 +162,24 @@ input {
   color: white;
   border: 1px solid hsl(154, 57%, 46%);
   box-shadow: inset 0 -3px hsl(154, 57%, 46%);
+  transition: all 0.1s ease-in-out;
 }
-.rightSide__form p {
+.rightSide__form button:hover {
+  background-color: #77e2b4;
+  border: 1px solid #86c0a7;
+  box-shadow: inset 0 -3px #86c0a7;
+}
+.rightSide__form .footnote {
   font-size: 0.65em;
   font-weight: 500;
   text-align: center;
   margin-top: 14px;
-  margin-bottom: 14px;
+  margin-bottom: 0px;
   color: hsl(246, 25%, 77%);
   letter-spacing: 0.04em;
 }
-.rightSide__form p span {
-  color: hsl(0, 84%, 75%);
+.rightSide__form .footnote span {
+  color: #e78586;
   font-weight: 700;
   letter-spacing: 0;
 }

@@ -1,0 +1,61 @@
+@media screen and (max-width: 800px) {
+  .bg {
+    height: 100%;
+    background-image: url("../images/bg-intro-mobile.png");
+    flex-direction: column;
+  }
+  .leftSide {
+    width: auto;
+    margin: 29px;
+    margin-bottom: 35px;
+    &__h1pContainer {
+      h1 {
+        margin-top: 58px;
+        margin-bottom: 23px;
+        text-align: center;
+        font-size: 27px;
+        line-height: 36px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .rightSide {
+    width: auto;
+    margin: 23px;
+    margin-top: 26px;
+    &__tryIt {
+      height: 89px;
+      margin-bottom: 24px;
+      P {
+        width: 200px;
+        text-align: center;
+        line-height: 1.7;
+        font-weight: 300;
+      }
+    }
+    &__form {
+      padding: 25px;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+      input {
+        padding-left: 17px;
+      }
+      input:not(.fnameInput) {
+        margin-top: 10px;
+      }
+      button {
+        margin-top: 10px;
+      }
+      .footnote {
+        margin-top: 9px;
+        padding-left: 17px;
+        padding-right: 17px;
+        line-height: 2.1;
+        letter-spacing: 0.03em;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

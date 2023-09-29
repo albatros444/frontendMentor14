@@ -33,42 +33,52 @@ const validateEmail = (input) => {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  //   console.log("submitted");
 
+  let check1;
+  let check2;
+  let check3;
+  let check4;
   if (fnameField.value.trim() === "") {
     showErrorMessage(errField1, "Firts Name", "noValue");
     fnameField.classList.add("errorInput");
-    console.log("here");
+    fnameField.placeholder = "";
   } else {
     removeErrorMessage(errField1, fnameField);
-    // console.log("removed");
+    check1 = true;
   }
 
   if (lnameField.value.trim() === "") {
     showErrorMessage(errField2, "Last Name", "noValue");
     lnameField.classList.add("errorInput");
+    lnameField.placeholder = "";
   } else {
     removeErrorMessage(errField2, lnameField);
+    check2 = true;
   }
 
   if (passwordField.value.trim() === "") {
     showErrorMessage(errField3, "Password", "noValue");
     passwordField.classList.add("errorInput");
+    passwordField.placeholder = "";
   } else {
     removeErrorMessage(errField3, passwordField);
+    check3 = true;
   }
 
   if (emailField.value.trim() === "") {
     showErrorMessage(errField4, "Email", "noValue");
     emailField.classList.add("errorInput");
+    emailField.placeholder = "";
   } else {
     const isVal = validateEmail(emailField.value.trim());
-    // console.log(isVal);
+
     if (!isVal) {
       showErrorMessage(errField4, "Email", "wrongEmail");
       emailField.classList.add("errorInput");
     } else {
       removeErrorMessage(errField4, emailField);
+      check4 = true;
     }
   }
+  check1 && check2 && check3 && check4 && form.submit();
 });
